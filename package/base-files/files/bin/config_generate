@@ -90,7 +90,7 @@ generate_static_network() {
 	fi
 }
 
-addr_offset=2
+addr_offset=34
 generate_network() {
 	local ports device macaddr protocol type ipaddr netmask vlan
 	local bridge=$2
@@ -163,11 +163,11 @@ generate_network() {
 		static)
 			local ipad netm prefix
 			case "$1" in
-				lan) ipad=${ipaddr:-"192.168.1.1"} ;;
-				*) ipad=${ipaddr:-"192.168.$((addr_offset++)).1"} ;;
+				lan) ipad=${ipaddr:-"10.33.0.1"} ;;
+				*) ipad=${ipaddr:-"10.$((addr_offset++)).0.1"} ;;
 			esac
 
-			netm=${netmask:-"255.255.255.0"}
+			netm=${netmask:-"255.255.0.0"}
 			str2ip netm "$netm"
 			netmask2prefix prefix "$netm"
 

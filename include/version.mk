@@ -29,7 +29,7 @@ VERSION_CODE:=$(call qstrip,$(CONFIG_VERSION_CODE))
 VERSION_CODE:=$(if $(VERSION_CODE),$(VERSION_CODE),r20265-f85a79bcb4)
 
 VERSION_REPO:=$(call qstrip,$(CONFIG_VERSION_REPO))
-VERSION_REPO:=$(if $(VERSION_REPO),$(VERSION_REPO),https://downloads.openwrt.org/releases/22.03.6)
+VERSION_REPO:=$(if $(VERSION_REPO),$(VERSION_REPO),https://mirrors.cloud.tencent.com/openwrt/releases/22.03.6)
 
 VERSION_DIST:=$(call qstrip,$(CONFIG_VERSION_DIST))
 VERSION_DIST:=$(if $(VERSION_DIST),$(VERSION_DIST),OpenWrt)

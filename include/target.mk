@@ -19,6 +19,8 @@ DEFAULT_PACKAGES:=\
 	libc \
 	libgcc \
 	libustream-wolfssl \
+	luci \
+	luci-compat \
 	logd \
 	mtd \
 	netifd \
@@ -44,7 +46,7 @@ DEFAULT_PACKAGES.nas:=\
 	mdadm
 # For router targets
 DEFAULT_PACKAGES.router:=\
-	dnsmasq \
+	dnsmasq-full \
 	firewall \
 	ip6tables \
 	iptables \

@@ -29,7 +29,7 @@ VERSION_CODE:=$(call qstrip,$(CONFIG_VERSION_CODE))
 VERSION_CODE:=$(if $(VERSION_CODE),$(VERSION_CODE),r24106-10cc5fcd00)
 
 VERSION_REPO:=$(call qstrip,$(CONFIG_VERSION_REPO))
-VERSION_REPO:=$(if $(VERSION_REPO),$(VERSION_REPO),https://downloads.openwrt.org/releases/23.05.5)
+VERSION_REPO:=$(if $(VERSION_REPO),$(VERSION_REPO),https://mirrors.ustc.edu.cn/openwrt/releases/23.05.5)
 
 VERSION_DIST:=$(call qstrip,$(CONFIG_VERSION_DIST))
 VERSION_DIST:=$(if $(VERSION_DIST),$(VERSION_DIST),OpenWrt)
